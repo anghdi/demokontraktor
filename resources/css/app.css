@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    body { font-family: var(--font-sans); }
+    .font-serif { font-family: Georgia, 'Times New Roman', serif; }
+    ::selection { background: #d97706; color: white; }
+}
+
+@layer components {
+    .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.22em] text-stone-500; }
+}
